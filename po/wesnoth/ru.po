@@ -13,29 +13,27 @@ msgstr ""
 "Project-Id-Version: wesnoth.po\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2018-09-16 10:04+0300\n"
-"PO-Revision-Date: 2014-11-27 12:07+0300\n"
+"PO-Revision-Date: 2018-10-03 06:16+0300\n"
 "Last-Translator: Fedor Khod'kov <fkhodkov@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Emacs 24.4.1, po-mode 2.22+0.4\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"Language-Team: \n"
 
 #. [multiplayer_side]: id=Custom
 #: data/_main.cfg:22
 msgid "Custom"
-msgstr ""
+msgstr "Пользовательский"
 
 #. [advanced_preference]: type=combo
 #: data/advanced_preferences.cfg:4
 msgid "Compress saved games"
-msgstr "Сжимать сохраненные игры"
+msgstr "Сжатие для сохранённых игр"
 
 #. [option]: id=gzip
 #: data/advanced_preferences.cfg:9
@@ -117,7 +115,7 @@ msgstr "Будет ли камера следовать за бойцом, ко�
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:92
 msgid "Chat message aging"
-msgstr "Устарение сообщений в чате"
+msgstr "Частота очистки игрового чата, в минутах"
 
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:93
@@ -140,7 +138,7 @@ msgstr "Подтверждать загрузку сохранений из др
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:117
 msgid "Show all unit types in help"
-msgstr "Показывать в справке всех бойцов"
+msgstr "Справка: показать все типы бойцов"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:118
@@ -154,45 +152,43 @@ msgstr ""
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:125
 msgid "Editor recent files limit"
-msgstr ""
+msgstr "Редактор карт: макс. недавних файлов"
 
 #. [advanced_preference]: type=int
 #: data/advanced_preferences.cfg:126
 msgid ""
 "The maximum number of items to display on the Recent Files menu in the editor"
-msgstr ""
+msgstr "Максимальное количество недавних файлов в редакторе карт"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:136
 msgid "Show color cursors"
-msgstr "Показать цвета курсора"
+msgstr "Цветной указатель мыши"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:137
-#, fuzzy
-#| msgid "Show color cursors"
 msgid "Use colored mouse cursors"
-msgstr "Показать цвета курсора"
+msgstr "Включает внутриигровой указатель мыши"
 
 #. [advanced_preference]: type=custom
 #: data/advanced_preferences.cfg:144
 msgid "Graphics scaling options"
-msgstr ""
+msgstr "Масштабирование графики"
 
 #. [advanced_preference]: type=custom
 #: data/advanced_preferences.cfg:150
 msgid "Customize orb colors"
-msgstr ""
+msgstr "Настройка меток движения..."
 
 #. [advanced_preference]: type=custom
 #: data/advanced_preferences.cfg:156
 msgid "Logging"
-msgstr ""
+msgstr "Настройка журналов..."
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:162
 msgid "Allow damage calculation with Monte Carlo simulation"
-msgstr ""
+msgstr "Включить вычисление урона методом Монте Карло"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:163
@@ -200,23 +196,23 @@ msgid ""
 "Allow the damage calculation window to simulate fights instead of using "
 "exact probability calculations"
 msgstr ""
+"Позволяет вычислять исход авто-боя методом симулирования боя, вместо "
+"вероятностных вычислений"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:170
-#, fuzzy
-#| msgid "Sound Effects"
 msgid "Show haloing effects"
-msgstr "Звуковые эффекты"
+msgstr "Включить спецэффекты в анимациях"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:171
 msgid "Show special unit graphical effects"
-msgstr ""
+msgstr "Настройка добавляет спецэффекты в анимацию"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:178
 msgid "Show deprecation messages in-game"
-msgstr ""
+msgstr "Включить уведомления в чате об устаревшей версии игрового клиента"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:179
@@ -225,11 +221,13 @@ msgid ""
 "will still be shown in the log, even if this is disabled. In addition, the "
 "deprecation log-domain controls how many messages are printed."
 msgstr ""
+"Настройка включает отображение предупреждений несоответствия версии клиента "
+"и сервера"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:186
 msgid "Use experimental PRNG combat"
-msgstr ""
+msgstr "Включить точный расчёт шанса попадания"
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:187
@@ -241,6 +239,11 @@ msgid ""
 "Note: this option only affects singleplayer, and the ‘Save random seed’ "
 "option must also be enabled when creating a game for this to work."
 msgstr ""
+"Данная экспериментальная настройка включает более точный расчет вероятности "
+"попадания.\n"
+"Для соответствия заявленным вероятностям удара/промаха. \n"
+"Внимание! Эта настройка работает только в одиночной игре, и также требует "
+"включение опции \"Стабильный генератор случайных чисел\"."
 
 #. [advanced_preference]: type=boolean
 #: data/advanced_preferences.cfg:197
@@ -337,7 +340,6 @@ msgstr ""
 msgid "Joystick: deadzone of the thruster"
 msgstr ""
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [unstore_unit]
 #. [lua]: set_status
 #: data/campaigns/Son_Of_The_Black_Eye/scenarios/07_The_Desert_of_Death.cfg:358
@@ -391,8 +393,6 @@ msgstr "Менеджеры по локализации"
 
 #. [about]
 #: data/core/about.cfg:323
-#, fuzzy
-#| msgid "Traits"
 msgid "Trailers"
 msgstr "Особенности"
 
@@ -448,10 +448,8 @@ msgstr "Арабский перевод"
 
 #. [about]
 #: data/core/about_i18n.cfg:31
-#, fuzzy
-#| msgid "Estonian Translation"
 msgid "Asturian Translation"
-msgstr "Эстонский перевод"
+msgstr "Австрийский перевод"
 
 #. [about]
 #: data/core/about_i18n.cfg:37
@@ -1004,7 +1002,7 @@ msgstr "Пугало"
 #. [item]: id=sceptre-of-fire
 #: data/core/editor/items.cfg:388
 msgid "Sceptre of Fire"
-msgstr "Огненный Скипетр"
+msgstr "Скипетр Огня"
 
 #. [item]: id=spear-fancy
 #: data/core/editor/items.cfg:394
@@ -1030,7 +1028,7 @@ msgstr "Каменная табличка"
 #. [object]
 #: data/core/editor/items.cfg:418 data/core/macros/items.cfg:518
 msgid "Storm Trident"
-msgstr "Штормовой Трезубец"
+msgstr "Трезубец Грома"
 
 #. [item]: id=straw-bale1
 #. [item]: id=straw-bale2
@@ -1517,10 +1515,8 @@ msgstr ""
 
 #. [else]
 #: data/core/macros/deprecated-utils.cfg:43
-#, fuzzy
-#| msgid "No usable weapon"
 msgid "This unit has been renamed to: "
-msgstr "Нет подходящего оружия"
+msgstr "Этот боец был переименован в:"
 
 #: data/core/macros/deprecated-utils.cfg:95
 msgid "<small>(early finish bonus)</small>"
@@ -1529,12 +1525,12 @@ msgstr "<small>(бонус за быстрое прохождение)</small>"
 #. [lua]: generate_objectives
 #: data/core/macros/deprecated-utils.cfg:99 data/lua/wml/objectives.lua:106
 msgid "Early finish bonus."
-msgstr "Бонус за быстрый финиш."
+msgstr "Бонус за быстрое прохождение."
 
 #. [lua]: generate_objectives
 #: data/core/macros/deprecated-utils.cfg:103 data/lua/wml/objectives.lua:109
 msgid "No early finish bonus."
-msgstr "Нет бонуса за быстрый финиш."
+msgstr "Нет бонуса за быстрое прохождение."
 
 #. [lua]: generate_objectives
 #: data/core/macros/deprecated-utils.cfg:107 data/lua/wml/objectives.lua:117
@@ -1646,11 +1642,8 @@ msgid "holy water^Leave it"
 msgstr "Оставить"
 
 #: data/core/macros/items.cfg:276
-#, fuzzy
-#| msgid "I am not suited to the use of this item! Let another take it."
 msgid "$unit.name has no need for this Holy Water! Let another take it."
-msgstr ""
-"Я не могу использовать этот предмет! Пусть его возьмет кто-нибудь другой."
+msgstr "не нуждается в Святой Воде"
 
 #. [object]
 #: data/core/macros/items.cfg:281
@@ -1699,7 +1692,7 @@ msgstr "Кольцо Медлительности"
 #. [object]: id={ID}
 #: data/core/macros/items.cfg:432
 msgid "The bearer of this ring is slowed."
-msgstr "Тот, кто носит это кольцо, замедлен."
+msgstr "Тот, кто носит это кольцо - замедлен."
 
 #. [object]: id={ID}
 #: data/core/macros/items.cfg:466
@@ -1709,7 +1702,7 @@ msgstr "Посох Быстроты"
 #. [object]: id={ID}
 #: data/core/macros/items.cfg:469
 msgid "This staff will grant the bearer swift movement."
-msgstr "Этот посох подарит тому, кто его носит, быстроту ног."
+msgstr "Этот посох одарит обладателя быстротой ног."
 
 #. [object]: id={ID}
 #: data/core/macros/items.cfg:470
@@ -1733,11 +1726,10 @@ msgid ""
 "$unit.name cannot use this Storm Trident! Let one of the merfolk who can "
 "wield it have it."
 msgstr ""
+"не может использовать трезубец грома! Его могут использовать водяные бойцы"
 
 #. [object]
 #: data/core/macros/items.cfg:521
-#, fuzzy
-#| msgid "This trident allows a merman to shoot electric bolts at his enemies!"
 msgid ""
 "This trident gives merfolk the power to throw lightning at their enemies."
 msgstr "Этот трезубец позволяет водяному стрелять молниями во врагов!"
@@ -1745,12 +1737,13 @@ msgstr "Этот трезубец позволяет водяному стрел
 #. [effect]: type=fire
 #: data/core/macros/items.cfg:525
 msgid "storm trident"
-msgstr "штормовой трезубец"
+msgstr "трезубец грома"
 
 #. [effect]: type=fire
 #: data/core/macros/items.cfg:548
+#, fuzzy
 msgid "sceptre of fire"
-msgstr "огненный скипетр"
+msgstr "скипетр огня"
 
 #: data/core/macros/names.cfg:18
 msgid ""
@@ -3056,10 +3049,8 @@ msgid "Bonus objective:"
 msgstr "Дополнительная цель:"
 
 #: data/core/macros/objective-utils.cfg:30
-#, fuzzy
-#| msgid "Bonus objective:"
 msgid "Optional objective:"
-msgstr "Дополнительная цель:"
+msgstr "Побочная цель:"
 
 #. [note]: description=<b>
 #: data/core/macros/objective-utils.cfg:52
@@ -3069,7 +3060,7 @@ msgstr "Это последний сценарий."
 #. [note]: description=<b>
 #: data/core/macros/objective-utils.cfg:58
 msgid "No turn limit"
-msgstr ""
+msgstr "Неограниченные ходы"
 
 #. [message]: speaker=narrator
 #: data/core/macros/scenario-utils.cfg:58
@@ -3083,177 +3074,167 @@ msgstr ""
 #. [music]
 #: data/core/macros/sound-utils.cfg:157
 msgid "Battle Epic"
-msgstr ""
+msgstr "Эпичный бой"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:163
 msgid "Battle Music"
-msgstr ""
+msgstr "Боевая музыка"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:169
 msgid "Breaking the Chains"
-msgstr ""
+msgstr "Ломая оковы"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:175
 msgid "Casualties of War"
-msgstr ""
+msgstr "Погибшие на войне"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:181
 msgid "Elf Land"
-msgstr ""
+msgstr "Земли эльфов"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:187
 msgid "Elvish theme"
-msgstr ""
+msgstr "Эльфийская"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:193
 msgid "Frantic"
-msgstr ""
+msgstr "Устрашающая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:199
 msgid "Heroes Rite"
-msgstr ""
+msgstr "Героическая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:205
 msgid "Into the Shadows"
-msgstr ""
+msgstr "Во тьме"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:211
 msgid "Journey’s End"
-msgstr ""
+msgstr "Конец истории"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:217
 msgid "Knalgan Theme"
-msgstr ""
+msgstr "Песнь Кналга"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:223
 msgid "The Knolls of Doldesh"
-msgstr ""
+msgstr "Верховья Долдэша"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:229
 msgid "Legends of the North"
-msgstr ""
+msgstr "Предания Севера"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:235
 msgid "Love Theme"
-msgstr ""
+msgstr "Романтическая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:241
 msgid "Loyalists"
-msgstr ""
+msgstr "Воодушевляющая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:247
 msgid "Over the Northern Mountains"
-msgstr ""
+msgstr "На северных горах"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:253
 msgid "Northerners"
-msgstr ""
+msgstr "Северяне"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:259
 msgid "Nunc Dimittis"
-msgstr ""
+msgstr "Священная"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:265
-#, fuzzy
-#| msgid "Red Potion"
 msgid "Revelation"
-msgstr "Красное зелье"
+msgstr "Подбадривающая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:271
-#, fuzzy
-#| msgid "Sand"
 msgid "Sad"
-msgstr "Песок"
+msgstr "Грустная"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:277
 msgid "Siege of Laurelmor"
-msgstr ""
+msgstr "Осада Лаурелмора"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:283
 msgid "Silvan Sanctuary"
-msgstr ""
+msgstr "Эльфийское святилище"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:289
 msgid "Suspense"
-msgstr ""
+msgstr "Пугающая"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:295
 msgid "The City Falls"
-msgstr ""
+msgstr "Падение города"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:301
 msgid "The Dangerous Symphony"
-msgstr ""
+msgstr "Симфония угрозы"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:307
-#, fuzzy
-#| msgid "Deep water"
 msgid "The Deep Path"
 msgstr "Глубоководье"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:313
-#, fuzzy
-#| msgid "The game is over."
 msgid "The King is Dead"
 msgstr "Игра окончена."
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:319
 msgid "Transience"
-msgstr ""
+msgstr "Переходная"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:325
 msgid "Traveling Minstrels"
-msgstr ""
+msgstr "Песнь бардов"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:331
 msgid "Underground"
-msgstr ""
+msgstr "Под землёй"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:337
 msgid "Vengeful Pursuit"
-msgstr ""
+msgstr "Погоня за местью"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:343
 msgid "Still Another Wanderer"
-msgstr ""
+msgstr "Бродяга"
 
 #. [music]
 #: data/core/macros/sound-utils.cfg:349
-#, fuzzy
-#| msgid "Bright orange"
 msgid "Weight of Revenge"
-msgstr "Светло-оранжевый"
+msgstr "Цена мести"
 
 #. [message]: speaker=narrator
 #: data/core/macros/utils.cfg:697
@@ -3342,7 +3323,7 @@ msgstr "Голубой"
 #. [color_range]: id=gold
 #: data/core/team-colors.cfg:107
 msgid "color^Gold"
-msgstr ""
+msgstr "Золотой"
 
 #. [color_range]: id=reef
 #: data/core/team-colors.cfg:116
@@ -3404,7 +3385,6 @@ msgstr "Пещера"
 msgid "Fungus"
 msgstr "Грибы"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=village
 #: data/core/team-colors.cfg:188 src/terrain/terrain.cpp:176
 msgid "Village"
@@ -3435,13 +3415,11 @@ msgstr "Непроходимо"
 msgid "Impassable"
 msgstr "Непроницаемо"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=fog
 #: data/core/team-colors.cfg:224 src/game_initialization/lobby_data.cpp:464
 msgid "Fog"
 msgstr "Туман"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [color_range]: id=shroud
 #: data/core/team-colors.cfg:230 src/game_initialization/lobby_data.cpp:467
 #: src/game_initialization/lobby_data.cpp:470
@@ -3450,15 +3428,13 @@ msgstr "Пелена"
 
 #. [core]: id=default
 #: data/cores.cfg:5
-#, fuzzy
-#| msgid "theme^Default"
 msgid "Wesnoth (Default)"
 msgstr "По умолчанию"
 
 #. [core]: id=default
 #: data/cores.cfg:8
 msgid "The standard Wesnoth core."
-msgstr ""
+msgstr "Стандарт"
 
 #. [language]
 #: data/english.cfg:6
@@ -3473,7 +3449,7 @@ msgid ""
 "Day: +25% Damage\n"
 "Night: −25% Damage"
 msgstr ""
-"Порядочные бойцы лучше сражаются днем и хуже ночью.\n"
+"Воины Света лучше сражаются днем и хуже ночью.\n"
 "\n"
 "День: +25% ущерба\n"
 "Ночь: −25% ущерба"
@@ -3493,7 +3469,7 @@ msgid ""
 "Day: −25% Damage\n"
 "Night: +25% Damage"
 msgstr ""
-"Хаотичные бойцы лучше сражаются ночью, а в течение дня хуже.\n"
+"Слуги Тьмы лучше сражаются ночью, и хуже - днём.\n"
 "\n"
 "День: −25% ущерба\n"
 "Ночь: +25% ущерба"
@@ -3604,13 +3580,14 @@ msgstr ""
 #. [naming]
 #. Generator for mountain labels in random maps; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax and <https://wiki.wesnoth.org/MapGeneratorWML#The_Default_Generator> for variables summary
 #: data/english.cfg:63
-#, fuzzy
-#| msgid "$name|’s Peak,Mount $name"
 msgid ""
 "\n"
 "\t\tmain=$base{!}’s Peak|$base Peak|Mount $base|Mount $base\n"
 "\t"
-msgstr "Пик $name|а,гора $name"
+msgstr ""
+"\n"
+"\t\tПик $name|а,гора $name\n"
+"\t"
 
 #. [naming]
 #. Generator for swamp labels in random maps; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax and <https://wiki.wesnoth.org/MapGeneratorWML#The_Default_Generator> for variables summary
@@ -3755,42 +3732,33 @@ msgstr "Альтернативный сервер Wesnoth"
 msgid ""
 "There are no custom options available for the selected era, game, or "
 "modification."
-msgstr ""
+msgstr "Настройки для данной эры, игры, или модификации недоступны"
 
 #. [button]: id=reset_option_values
 #: data/gui/macros/custom_options_tree.cfg:249
-#, fuzzy
-#| msgid "theme^Default"
 msgid "Defaults"
 msgstr "По умолчанию"
 
 #. [label]
 #: data/gui/macros/player_list_panel.cfg:29
-#, fuzzy
-#| msgid "Computer Player"
 msgid "Connected Players"
-msgstr "Компьютер"
+msgstr "Игроки"
 
 #. [label]: id=title
 #: data/gui/window/install_dependencies.cfg:37
 msgid "Install Dependencies"
-msgstr "Установить зависимости"
+msgstr "Установить требуемые компоненты"
 
 #. [button]: id=ok
 #: data/gui/window/install_dependencies.cfg:85
-#, fuzzy
-#| msgid "yes"
 msgid "Yes"
 msgstr "да"
 
 #. [button]: id=cancel
 #: data/gui/window/install_dependencies.cfg:96
-#, fuzzy
-#| msgid "Nov"
 msgid "No"
-msgstr "Ноя"
+msgstr "нет"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [label]: id=title
 #: data/gui/window/screenshot_notification.cfg:95
 #: src/hotkey/command_executor.cpp:628
@@ -3820,9 +3788,6 @@ msgstr ""
 #. [fonts]
 #: data/hardwired/fonts.cfg:36
 #, fuzzy
-#| msgid ""
-#| "DejaVuSans.ttf,Andagii.ttf,DroidSansJapanese.ttf,DroidSansFallbackFull."
-#| "ttf,Junicode-Regular.ttf"
 msgid ""
 "Lato-Regular.ttf,DejaVuSans.ttf,Andagii.ttf,DroidSansJapanese.ttf,"
 "DroidSansFallbackFull.ttf,Junicode-Regular.ttf"
@@ -3833,44 +3798,38 @@ msgstr ""
 #. [lua]: wesnoth.deprecate_api
 #: data/lua/core.lua:187
 msgid "(Note: You should use $replacement instead in new code)"
-msgstr ""
+msgstr "(Внимание: в новой версии вы должны использовать $replacement)"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: wesnoth.deprecate_api
 #: data/lua/core.lua:194 src/deprecation.cpp:69
 msgid "Invalid deprecation level $level (should be 1-4)"
-msgstr ""
+msgstr "Сильно устаревший клиент: $level (должно быть 1-4)"
 
 #. [lua]: wml_actions.deprecated_message
 #: data/lua/wml-tags.lua:889
 msgid "Invalid deprecation level (should be 1-4)"
-msgstr ""
+msgstr "Сильно устаревший клиент: (должно быть 1-4)"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:126 src/actions/attack.cpp:1129
 msgid "female^poisoned"
 msgstr "отравлена"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:128 src/actions/attack.cpp:1136
 msgid "female^slowed"
 msgstr "замедлена"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:128 src/actions/attack.cpp:1136
 msgid "slowed"
 msgstr "замедлен"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:129 src/actions/attack.cpp:1142
 msgid "female^petrified"
 msgstr "окаменела"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: set_status
 #: data/lua/wml/harm_unit.lua:129 src/actions/attack.cpp:1142
 msgid "petrified"
@@ -3886,7 +3845,6 @@ msgstr "неизлечима"
 msgid "unhealable"
 msgstr "неизлечимо"
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [lua]: generate_objectives
 #: data/lua/wml/objectives.lua:36 src/game_initialization/mp_game_utils.cpp:74
 msgid "Victory:"
@@ -3902,7 +3860,6 @@ msgstr "Поражение:"
 msgid "%d%% of gold carried over to the next scenario."
 msgstr "В следующий сценарий переносится %d%% золота."
 
-#. #-#-#-#-#  wesnoth.wml.pot (PACKAGE VERSION)  #-#-#-#-#
 #. [objective]: condition=win
 #: data/multiplayer/scenarios/2p_Tombs_of_Kesorak.cfg:156
 #: src/game_initialization/mp_game_utils.cpp:76
@@ -3930,7 +3887,7 @@ msgstr "электрический"
 #. [action]: id=button-playreplay, type=image
 #: data/themes/_initial.cfg:438 data/themes/_initial.cfg:598
 msgid "Play"
-msgstr "Проиграть"
+msgstr "Включить"
 
 #. [action]: id=button-playreplay, type=image
 #: data/themes/_initial.cfg:439 data/themes/_initial.cfg:599
@@ -3945,7 +3902,7 @@ msgstr "Стоп"
 #. [action]: id=button-stopreplay, type=image
 #: data/themes/_initial.cfg:454
 msgid "pause after current move"
-msgstr ""
+msgstr "пауза после текущего хода"
 
 #. [action]: id=button-resetreplay, type=image
 #: data/themes/_initial.cfg:469 data/themes/_initial.cfg:626
@@ -3979,17 +3936,13 @@ msgstr "проиграть ход стороны"
 
 #. [action]: id=button-nextmove, type=image
 #: data/themes/_initial.cfg:516 data/themes/_initial.cfg:668
-#, fuzzy
-#| msgid "Next Side"
 msgid "Next Move"
-msgstr "Следующая сторона"
+msgstr "Следующий ход"
 
 #. [action]: id=button-nextmove, type=image
 #: data/themes/_initial.cfg:517 data/themes/_initial.cfg:669
-#, fuzzy
-#| msgid "play side turn"
 msgid "play single move"
-msgstr "проиграть ход стороны"
+msgstr "воспроизвести следующий ход"
 
 #. [menu]: id=show-what
 #: data/themes/_initial.cfg:529 data/themes/_initial.cfg:681
@@ -3998,15 +3951,13 @@ msgstr "Точка зрения"
 
 #. [action]: id=button-continue
 #: data/themes/_initial.cfg:540
-#, fuzzy
-#| msgid "continuous replay"
 msgid "Continue Play"
-msgstr "непрерывный повтор"
+msgstr "Продолжить"
 
 #. [action]: id=button-continue
 #: data/themes/_initial.cfg:541
 msgid "Exit the replay mode and continue playing normally."
-msgstr ""
+msgstr "Выйти из режима риплея."
 
 #. [action]: id=skip-animation, type=checkbox
 #: data/themes/_initial.cfg:553 data/themes/_initial.cfg:693
@@ -4021,17 +3972,17 @@ msgstr "Повтор"
 #. [action]: id=button-stopreplay, type=image
 #: data/themes/_initial.cfg:613
 msgid "pause"
-msgstr ""
+msgstr "Пауза"
 
 #. [theme]: id=Classic
 #: data/themes/classic.cfg:11
 msgid "theme^Classic"
-msgstr ""
+msgstr "Классическая"
 
 #. [theme]: id=Classic
 #: data/themes/classic.cfg:13
 msgid "The classic, pre-1.12 theme"
-msgstr ""
+msgstr "Классическая тема (до версии 1.12)"
 
 #. [menu]: id=menu-main
 #: data/themes/classic.cfg:86 data/themes/cutscene.cfg:37
@@ -4094,28 +4045,22 @@ msgstr "доход"
 #. [label]: id=battery-icon
 #: data/themes/classic.cfg:266
 msgid "battery"
-msgstr ""
+msgstr "заряд"
 
 #. [unit_level]: id=unit-level
 #: data/themes/classic.cfg:438
-#, fuzzy
-#| msgid "statuspanel^lvl"
 msgid "statuspanel^level"
 msgstr "ур"
 
 #. [unit_moves]: id=unit-moves
 #: data/themes/classic.cfg:468
-#, fuzzy
-#| msgid "statuspanel^lvl"
 msgid "statuspanel^moves"
-msgstr "ур"
+msgstr "двж"
 
 #. [unit_defense]: id=unit-defense
 #: data/themes/classic.cfg:477
-#, fuzzy
-#| msgid "statuspanel^lvl"
 msgid "statuspanel^terrain def."
-msgstr "ур"
+msgstr "защ"
 
 #. [theme]: id=Default
 #: data/themes/default.cfg:32
@@ -4124,8 +4069,6 @@ msgstr "По умолчанию"
 
 #. [theme]: id=Default
 #: data/themes/default.cfg:33
-#, fuzzy
-#| msgid "Default theme."
 msgid "The default theme"
 msgstr "Тема по умолчанию."
 
@@ -4137,7 +4080,7 @@ msgstr "Вернуться к..."
 #. [label]: id=label-mp
 #: data/themes/default.cfg:161
 msgid "MP"
-msgstr "ЧХ"
+msgstr "ОД"
 
 #. [label]: id=label-def
 #: data/themes/default.cfg:169
@@ -4338,7 +4281,7 @@ msgid ""
 "better at night. <i>Neutral</i> units are unaffected by the time of day. The "
 "rare <i>liminal</i> units fight best during twilight."
 msgstr ""
-"<i>Порядочные</i> бойцы лучше сражаются днём, а <i>хаотичные</i> — ночью. На "
+"<i>Воины Света</i> лучше сражаются днём, а <i>Слуги Тьмы</i> — ночью. На "
 "<i>Нейтральных</i> бойцов время суток не влияет. Редкий вид <i>Теневых</i> "
 "бойцов лучше сражается в сумерках."
 
@@ -4649,13 +4592,15 @@ msgid ""
 "villages unoccupied, but keep in mind that an enemy unit becomes much harder "
 "to dislodge from a village! Plan your movements accordingly."
 msgstr ""
+"Контроль над деревнями - ключ к победе. Каждый захочет захватить еще одну. "
+"Вы можете этим воспользоваться и заманить врага в беззащитную деревню. "
+"Однако, помните - когда противник займёт твою деревню, выбить его будет "
+"сложнее! Выбирайте стратегию мудро."
 
 #. [tip]
 #: data/tips.cfg:153
-#, fuzzy
-#| msgid "<i>― King Konrad, 536YW</i>"
 msgid "<i>― Kai Laudiss, 623YW</i>"
-msgstr "<i>— Король Конрад, 536 ГВ</i>"
+msgstr "<i>— Король Кай Лаудисс, 623 ГВ</i>"
 
 #. [tip]
 #: data/tips.cfg:156
@@ -4698,8 +4643,8 @@ msgid ""
 "Use healers to support your attacks — they will win you battles without "
 "needing to attack anything themselves."
 msgstr ""
-"Используйте лекарей для поддержки атакующих — они принесут Вам не одну "
-"победу, даже не сражаясь сами."
+"Используйте целителей для поддержки атакующих — они принесут немало побед, "
+"пусть и не сражаясь оружием."
 
 #. [tip]
 #: data/tips.cfg:173 data/tips.cfg:222
@@ -4731,7 +4676,7 @@ msgid ""
 "Units are healed when they advance a level. Used wisely, this can turn a "
 "fight."
 msgstr ""
-"Бойцы полностью вылечиваются, получая новый уровень. Используйте эту "
+"Получая новый уровень, бойцы полностью вылечиваются. Используйте эту "
 "особенность с умом, и вы сможете обратить исход битвы."
 
 #. [tip]
@@ -4803,7 +4748,7 @@ msgid ""
 "that terrain will deprive them of its benefits."
 msgstr ""
 "Если противник получает от какой-либо редкой территории больше преимуществ, "
-"чем вы, вы можете лишить его этого преимущества, заняв эту территорию."
+"чем вы, есть смысл занять эту территорию, и лишить его этого преимущества."
 
 #. [tip]
 #: data/tips.cfg:213
@@ -4944,6 +4889,9 @@ msgid ""
 "of 20 gold. In a campaign, always check if recalling a unit of the same type "
 "may be cheaper."
 msgstr ""
+"Иногда, стоимость вербовки, для некоторых бойцов, может превысить обычные "
+"затраты в виде 20 золотых. Поэтому всегда стоит проверить - есть ли "
+"возможность завербовать аналогичного бойца за меньшую стоимость."
 
 #. [tip]
 #: data/tips.cfg:257
@@ -4951,13 +4899,13 @@ msgid ""
 "You must accept some losses in battle. It is not uncommon for beginners to "
 "lose sight of victory as they attempt to keep every unit alive."
 msgstr ""
+"Вы должны принять некоторые боевые потери. Зачастую, стремление спасти "
+"каждого бойца приводит к поражению всей битве в целом."
 
 #. [tip]
 #: data/tips.cfg:258
-#, fuzzy
-#| msgid "<i>― Queen Li’sar, 528YW</i>"
 msgid "<i>― Queen Asheviere, 503YW</i>"
-msgstr "<i>— Королева Лисар, 528 ЭВ</i>"
+msgstr "<i>— Королева Ашевир, 503 ЭВ</i>"
 
 #. [tip]
 #: data/tips.cfg:262
@@ -4966,15 +4914,13 @@ msgid ""
 "if they occupy a village hex, they do not gain any defensive benefits from "
 "the village, although they will still be healed."
 msgstr ""
-"<i>Дикие</i> бойцы, такие как Летучие мыши и дикие животные, будут избегать "
+"<i>Дикие</i> враги, такие как Летучие мыши и дикие животные, будут избегать "
 "деревень. Даже если они займут поле с деревней, они не получат никакого "
 "бонуса к рейтингу защиты, хотя по прежнему будут лечиться."
 
 #: src/actions/advancement.cpp:225
-#, fuzzy
-#| msgid "No advancement"
 msgid "an advancement choice"
-msgstr "Не продвигается"
+msgstr "удачный выбор"
 
 #: src/actions/attack.cpp:386 src/actions/attack.cpp:656
 #: src/actions/attack.cpp:1417
@@ -5088,28 +5034,20 @@ msgid "Requesting distribution terms..."
 msgstr "Запрашиваю условия распространения..."
 
 #: src/addon/client.cpp:127
-#, fuzzy
-#| msgid ""
-#| "The add-on <i>$addon_title</i> has an invalid file or directory name and "
-#| "cannot be installed."
 msgid ""
 "The add-on <i>$addon_title</i> has an invalid id '$addon_id' and cannot be "
 "published."
 msgstr ""
 "В аддоне <i>$addon_title</i> есть неправильное имя файла или каталога, его "
-"нельзя установить."
+"нельзя установить. Идентификатор аддона: $addon_id"
 
 #: src/addon/client.cpp:153
-#, fuzzy
-#| msgid ""
-#| "The add-on <i>$addon_title</i> has an invalid file or directory name and "
-#| "cannot be installed."
 msgid ""
 "The add-on <i>$addon_title</i> has a file or directory containing invalid "
 "characters and cannot be published."
 msgstr ""
 "В аддоне <i>$addon_title</i> есть неправильное имя файла или каталога, его "
-"нельзя установить."
+"нельзя установить. Идентификатор аддона: $addon_id"
 
 #: src/addon/client.cpp:161
 msgid ""
@@ -5119,13 +5057,9 @@ msgid ""
 "whitespace, control characters, or any of the following characters:\n"
 "\n"
 "&quot; * / : &lt; &gt; ? \\ | ~"
-msgstr ""
+msgstr "<span color=\"$color\">$number_or_percent</span> cost to recall"
 
 #: src/addon/client.cpp:172
-#, fuzzy
-#| msgid ""
-#| "The add-on <i>$addon_title</i> has an invalid file or directory name and "
-#| "cannot be installed."
 msgid ""
 "The add-on <i>$addon_title</i> contains files or directories with case "
 "conflicts. File or directory names may not be differently-cased versions of "
@@ -5155,16 +5089,12 @@ msgstr ""
 "нельзя установить."
 
 #: src/addon/client.cpp:264
-#, fuzzy
-#| msgid ""
-#| "The add-on <i>$addon_title</i> has an invalid file or directory name and "
-#| "cannot be installed."
 msgid ""
 "The add-on <i>$addon_title</i> has file or directory names with case "
 "conflicts. This may cause problems."
 msgstr ""
-"В аддоне <i>$addon_title</i> есть неправильное имя файла или каталога, его "
-"нельзя установить."
+"В аддоне <i>$addon_title</i> есть файл или папка с конфликтом именования. "
+"Могут быть проблемы."
 
 #: src/addon/client.cpp:321
 msgid "The server responded with an error:"
@@ -5268,16 +5198,12 @@ msgid "addon_type^MP campaign"
 msgstr "Кампания для МП"
 
 #: src/addon/info.cpp:173
-#, fuzzy
-#| msgid "addon_type^MP modification"
 msgid "addon_type^Modification"
 msgstr "Модификация для МП"
 
 #: src/addon/info.cpp:175
-#, fuzzy
-#| msgid "addon_type^Resources"
 msgid "addon_type^Core"
-msgstr "Ресурсы"
+msgstr "Ядро"
 
 #: src/addon/info.cpp:177
 msgid "addon_type^Resources"
@@ -5377,7 +5303,7 @@ msgstr "Ошибка при скачивании списка аддонов с 
 
 #: src/addon/manager_ui.cpp:284
 msgid "Could not find an add-on matching id $addon_id on the add-on server."
-msgstr ""
+msgstr "Не найден аддон $addon_id"
 
 #: src/chat_command_handler.cpp:111
 msgid "Added to ignore list: $nick"
@@ -5549,10 +5475,8 @@ msgid "<password> <email (optional)>"
 msgstr "<пароль> <email (необязательно)>"
 
 #: src/chat_command_handler.hpp:131
-#, fuzzy
-#| msgid "Drop your nickname."
 msgid "Register your nickname"
-msgstr "Удалить свой ник."
+msgstr "Зарегистрироваться"
 
 #: src/chat_command_handler.hpp:133
 msgid "Drop your nickname."
@@ -5637,23 +5561,23 @@ msgstr "шёпот: $sender"
 
 #: src/deprecation.cpp:40
 msgid "$elem has been deprecated indefinitely."
-msgstr ""
+msgstr "$elem устарел по неизвестной причине"
 
 #: src/deprecation.cpp:47
 msgid "$elem has been deprecated and may be removed in version $version."
-msgstr ""
+msgstr "$elem устарел и может быть удален в версии $version"
 
 #: src/deprecation.cpp:49
 msgid "$elem has been deprecated and may be removed at any time."
-msgstr ""
+msgstr "$elem устарел и может быть удален в любое время"
 
 #: src/deprecation.cpp:56
 msgid "$elem has been deprecated and will be removed in version $version."
-msgstr ""
+msgstr "$elem устарел и будет удален в версии $version"
 
 #: src/deprecation.cpp:61
 msgid "$elem has been deprecated and removed."
-msgstr ""
+msgstr "$elem устарел и был удален"
 
 #: src/desktop/notifications.cpp:82
 msgid "Chat message"
@@ -5693,85 +5617,76 @@ msgid "%b %d %Y"
 msgstr "%b %d %Y"
 
 #: src/game_config.cpp:536
-#, fuzzy
-#| msgid "Invalid color range: "
 msgid "Invalid color in range: "
-msgstr "Неверный диапазон цветов: "
+msgstr "Цвет не входит в диапазон"
 
 #: src/game_config_manager.cpp:199 src/game_config_manager.cpp:208
 #: src/game_config_manager.cpp:220
 msgid "Error validating data core."
-msgstr ""
+msgstr "Ошибка проверки ядра данных"
 
 #: src/game_config_manager.cpp:200
 msgid "Found a core without id attribute."
-msgstr ""
+msgstr "Ошибка проверки ядра данных - нет идентификатора id"
 
 #: src/game_config_manager.cpp:201 src/game_config_manager.cpp:211
 #: src/game_config_manager.cpp:224
 msgid "Skipping the core."
-msgstr ""
+msgstr "Пропуск ядра"
 
 #: src/game_config_manager.cpp:209 src/game_config_manager.cpp:221
 #: src/game_config_manager.cpp:244
 msgid "Core ID: "
-msgstr ""
+msgstr "Идентификатор ядра"
 
 #: src/game_config_manager.cpp:210
 msgid "The ID is already in use."
-msgstr ""
+msgstr "Идентификатор ядра занят"
 
 #: src/game_config_manager.cpp:222
 msgid "Core Path: "
-msgstr ""
+msgstr "Путь к ядру:"
 
 #: src/game_config_manager.cpp:223
-#, fuzzy
-#| msgid "Variable not found"
 msgid "File not found."
-msgstr "Переменная не найдена"
+msgstr "Файл не найден"
 
 #: src/game_config_manager.cpp:243 src/game_config_manager.cpp:255
 msgid "Error loading core data."
-msgstr ""
+msgstr "Ошибка загрузки данных"
 
 #: src/game_config_manager.cpp:245
 msgid "Error loading the core with named id."
-msgstr ""
+msgstr "Ошибка загрузки ядра"
 
 #: src/game_config_manager.cpp:246
 msgid "Falling back to the default core."
-msgstr ""
+msgstr "Откат к состоянию по умолчанию"
 
 #: src/game_config_manager.cpp:256
 msgid "Can't locate the default core."
-msgstr ""
+msgstr "Не могу найти настройки по умолчанию"
 
 #: src/game_config_manager.cpp:257
-#, fuzzy
-#| msgid "The game is over."
 msgid "The game will now exit."
-msgstr "Игра окончена."
+msgstr "Игра сейчас завершится."
 
 #: src/game_config_manager.cpp:313
-#, fuzzy
-#| msgid "Error loading game configuration files. The game will now exit."
 msgid ""
 "Error loading custom game configuration files. The game will try without "
 "loading add-ons."
-msgstr "Ошибка при загрузке файлов с настройками игры. Игра сейчас завершится."
+msgstr ""
+"Ошибка при загрузке файлов с настройками игры. Попытка запуска без аддонов."
 
 #: src/game_config_manager.cpp:320
-#, fuzzy
-#| msgid "Error loading game configuration files. The game will now exit."
 msgid ""
 "Error loading custom game configuration files. The game will fallback to the "
 "default core files."
-msgstr "Ошибка при загрузке файлов с настройками игры. Игра сейчас завершится."
+msgstr ""
+"Ошибка при загрузке файлов с настройками игры. Откат к настройкам по "
+"умолчанию"
 
 #: src/game_config_manager.cpp:329
-#, fuzzy
-#| msgid "Error loading game configuration files. The game will now exit."
 msgid ""
 "Error loading default core game configuration files. The game will now exit."
 msgstr "Ошибка при загрузке файлов с настройками игры. Игра сейчас завершится."
@@ -5820,10 +5735,8 @@ msgid "Team"
 msgstr "Команда"
 
 #: src/game_initialization/connect_engine.cpp:1007
-#, fuzzy
-#| msgid "Anonymous local player"
 msgid "Anonymous player"
-msgstr "Анонимный локальный игрок"
+msgstr "Анонимный игрок"
 
 #: src/game_initialization/connect_engine.cpp:1012
 #: src/game_initialization/connect_engine.cpp:1306
@@ -5865,11 +5778,11 @@ msgstr "недоступно."
 
 #: src/game_initialization/create_engine.cpp:149
 msgid "Custom map."
-msgstr ""
+msgstr "Пользовательская карта."
 
 #: src/game_initialization/depcheck.cpp:491
 msgid "Failed to resolve dependencies"
-msgstr "Не удалось разрешить зависимости"
+msgstr "Не удается найти требуемые компоненты"
 
 #: src/game_initialization/depcheck.cpp:516
 msgid "Scenario can't be activated. Some dependencies are missing: "
@@ -5887,7 +5800,7 @@ msgstr "Эру нельзя активировать. Не хватает нек
 #: src/game_initialization/depcheck.cpp:638
 #: src/game_initialization/depcheck.cpp:730
 msgid "No compatible scenarios found."
-msgstr "Совместимых сценариев не найдено."
+msgstr "Не найдены совместимые сценарии"
 
 #: src/game_initialization/depcheck.cpp:667
 msgid ""
@@ -5898,7 +5811,7 @@ msgstr "Не все выбранные модификации совместим
 #: src/game_initialization/depcheck.hpp:312
 #: src/game_initialization/depcheck.hpp:324
 msgid "A component"
-msgstr ""
+msgstr "компонент"
 
 #: src/game_initialization/flg_manager.cpp:211
 msgid "Only random sides in the current era."
@@ -5913,16 +5826,12 @@ msgid "Cannot obtain genders for invalid leader $leader"
 msgstr "Не могу получить пол неправильного лидера $leader"
 
 #: src/game_initialization/lobby_data.cpp:243
-#, fuzzy
-#| msgid "Missing argument $arg_id"
 msgid "Missing addon: $name"
-msgstr "Пропущен аргумент $arg_id"
+msgstr "Не могу найти аддон: $name"
 
 #: src/game_initialization/lobby_data.cpp:245
-#, fuzzy
-#| msgid "Missing argument $arg_id"
 msgid "Missing addon: $id"
-msgstr "Пропущен аргумент $arg_id"
+msgstr "Не могу найти аддон: $id"
 
 #: src/game_initialization/lobby_data.cpp:282
 msgid "Unknown era"
@@ -5930,10 +5839,8 @@ msgstr "Неизвестная эра"
 
 #: src/game_initialization/lobby_data.cpp:350
 #: src/game_initialization/lobby_data.cpp:383
-#, fuzzy
-#| msgid "scenario settings^Side"
 msgid "scenario_abbreviation^S"
-msgstr "Сторона"
+msgstr "Ст-на"
 
 #: src/game_initialization/lobby_data.cpp:369
 msgid "Remote scenario"
@@ -5942,7 +5849,7 @@ msgstr "Удаленный сценарий"
 #: src/game_initialization/lobby_data.cpp:391
 #: src/game_initialization/lobby_data.cpp:414
 msgid "campaign_abbreviation^C"
-msgstr ""
+msgstr "Камп-я"
 
 #: src/game_initialization/lobby_data.cpp:419
 msgid "Unknown scenario"
@@ -5955,13 +5862,13 @@ msgstr "Игра перезагружена"
 #: src/game_initialization/lobby_data.cpp:444
 msgid "Vacant Slot:"
 msgid_plural "Vacant Slots:"
-msgstr[0] "Свободный слот:"
-msgstr[1] "Свободных слота:"
-msgstr[2] "Свободных слотов:"
+msgstr[0] "Свободное место:"
+msgstr[1] "Свободных места:"
+msgstr[2] "Свободных мест:"
 
 #: src/game_initialization/lobby_data.cpp:446
 msgid "mp_game_available_slots^Full"
-msgstr ""
+msgstr "Все места заняты"
 
 #: src/game_initialization/lobby_data.cpp:457
 #: src/game_initialization/lobby_data.cpp:459 src/savegame.cpp:631
@@ -5969,14 +5876,10 @@ msgid "Turn"
 msgstr "Ход"
 
 #: src/game_initialization/lobby_data.cpp:472
-#, fuzzy
-#| msgid "vision: "
 msgid "vision^none"
 msgstr "видение: "
 
 #: src/game_initialization/lobby_data.cpp:481
-#, fuzzy
-#| msgid "Time limit"
 msgid "time limit^none"
 msgstr "Лимит времени"
 
@@ -5985,12 +5888,16 @@ msgid ""
 "The host's version of <i>$addon</i> is incompatible. They have version <b>"
 "$host_ver</b> while you have version <b>$local_ver</b>."
 msgstr ""
+"Аддон <i>$addon</i> не поддерживается сервером. Версия сервера: <b>"
+"$host_ver</b>, версия клиента <b>$local_ver</b>."
 
 #: src/game_initialization/lobby_data.cpp:535
 msgid ""
 "Your version of <i>$addon</i> is incompatible. You have version <b>"
 "$local_ver</b> while the host has version <b>$host_ver</b>."
 msgstr ""
+"Ваша версия аддона <i>$addon</i> не поддерживается сервером. Версия сервера: "
+"<b>$host_ver</b>, версия клиента <b>$local_ver</b>."
 
 #: src/game_initialization/mp_game_utils.cpp:101
 msgid "Cannot find era $era"
@@ -6001,20 +5908,16 @@ msgid "Connection timed out"
 msgstr "Превышен лимит времени подключения"
 
 #: src/game_initialization/multiplayer.cpp:124
-#, fuzzy
-#| msgid ""
-#| "The server accepts versions '$version1' while you are using version "
-#| "'$version2'"
 msgid ""
 "The server accepts versions '$required_version', but you are using version "
 "'$your_version'"
 msgstr ""
-"Сервер принимает версии '$version1', тогда как Вы используете версию "
-"'$version2'"
+"Сервер принимает версии '$required_version', тогда как Вы используете версию "
+"'$your_version'"
 
 #: src/game_initialization/multiplayer.cpp:134
 msgid "Server-side redirect loop"
-msgstr "Редирект со стороны сервера"
+msgstr "Перенаправление на сервере"
 
 #: src/game_initialization/multiplayer.cpp:209
 msgid ""
@@ -6049,10 +5952,6 @@ msgid "The nickname ‘$nick’ is already taken."
 msgstr "Ник ‘$nick’ уже занят."
 
 #: src/game_initialization/multiplayer.cpp:314
-#, fuzzy
-#| msgid ""
-#| "The nickname ‘$nick’ contains invalid characters. Only alpha-numeric "
-#| "characters, underscores and hyphens are allowed."
 msgid ""
 "The nickname ‘$nick’ contains invalid characters. Only alpha-numeric "
 "characters (one at minimum), underscores and hyphens are allowed."
@@ -6077,18 +5976,14 @@ msgid " This server disallows unregistered nicknames."
 msgstr " Этот сервер не разрешает использовать незарегистрированные ники."
 
 #: src/game_initialization/multiplayer.cpp:326
-#, fuzzy
-#| msgid "The nickname ‘$nick’ is registered on this server."
 msgid "The nickname ‘$nick’ is banned on this server’s forums."
-msgstr "Ник ‘$nick’ зарегистрирован на этом сервере."
+msgstr "Ник ‘$nick’ заблокирован на этом сервере."
 
 #: src/game_initialization/multiplayer.cpp:328
 msgid "Your IP address is banned on this server’s forums."
-msgstr ""
+msgstr "Ваш IP заблокирован на форумах данного сервера"
 
 #: src/game_initialization/multiplayer.cpp:330
-#, fuzzy
-#| msgid "The nickname ‘$nick’ is registered on this server."
 msgid ""
 "The email address for the nickname ‘$nick’ is banned on this server’s forums."
 msgstr "Ник ‘$nick’ зарегистрирован на этом сервере."
@@ -6128,8 +6023,6 @@ msgid "Turns finished early: "
 msgstr "Количество оставшихся ходов: "
 
 #: src/game_initialization/playcampaign.cpp:67
-#, fuzzy
-#| msgid "per turn"
 msgid " per turn"
 msgstr "за ход"
 
@@ -6138,32 +6031,22 @@ msgid "Early finish bonus: "
 msgstr "Бонус за быстрый финиш: "
 
 #: src/game_initialization/playcampaign.cpp:68
-#, fuzzy
-#| msgid "Turn bonus: "
 msgid "Total bonus: "
-msgstr "Бонус хода: "
+msgstr "Итоговый бонус: "
 
 #: src/game_initialization/playcampaign.cpp:70
-#, fuzzy
-#| msgid "Village gold: "
 msgid "Total gold: "
-msgstr "Золота с деревень: "
+msgstr "Итого золота: "
 
 #: src/game_initialization/playcampaign.cpp:73
-#, fuzzy
-#| msgid "Carry over percentage: "
 msgid "Carryover percentage: "
 msgstr "Процент, сохраняющийся в следующем сценарии: "
 
 #: src/game_initialization/playcampaign.cpp:76
-#, fuzzy
-#| msgid "Bonus Gold: "
 msgid "Bonus gold: "
-msgstr "Бонус: "
+msgstr "Бонус золота: "
 
 #: src/game_initialization/playcampaign.cpp:78
-#, fuzzy
-#| msgid "Retained Gold: "
 msgid "Retained gold: "
 msgstr "Сохранённое золото: "
 
@@ -6245,7 +6128,7 @@ msgstr "Игровая карта не может быть загружена: "
 #: src/game_initialization/playcampaign.cpp:305 src/game_launcher.cpp:868
 #: src/game_launcher.cpp:1002
 msgid "Map generator error: "
-msgstr ""
+msgstr "Ошибка генератора карт:"
 
 #: src/game_initialization/playcampaign.cpp:307
 msgid "Error while reading the WML: "
@@ -6265,10 +6148,8 @@ msgid "Unknown scenario: '$scenario|'"
 msgstr "Неизвестный сценарий:  '$scenario|'"
 
 #: src/game_initialization/singleplayer.cpp:42
-#, fuzzy
-#| msgid "No campaigns are available.\n"
 msgid "No campaigns are available."
-msgstr "Нет доступных кампаний.\n"
+msgstr "Нет доступных кампаний."
 
 #: src/game_launcher.cpp:646 src/game_launcher.cpp:664
 msgid "The file you have tried to load is corrupt"
@@ -6293,14 +6174,10 @@ msgid "Error while starting server: "
 msgstr "Ошибка при запуске сервера: "
 
 #: src/game_launcher.cpp:884
-#, fuzzy
-#| msgid "Connection timed out"
 msgid "Connection failed: "
 msgstr "Превышен лимит времени подключения"
 
 #: src/generators/default_map_generator_job.cpp:711
-#, fuzzy
-#| msgid "Random maps with an odd width aren't supported."
 msgid "Random maps with an odd width aren't supported."
 msgstr "Случайные карты с нечётной шириной не поддерживаются."
 
@@ -6314,16 +6191,9 @@ msgstr ""
 
 #: src/gui/core/linked_group_definition.cpp:39
 msgid "Linked group '$id' needs a 'fixed_width' or 'fixed_height' key."
-msgstr ""
+msgstr "Группа $id требует такие значения как 'fixed_width' или 'fixed_height'"
 
 #: src/gui/dialogs/addon/install_dependencies.cpp:38
-#, fuzzy
-#| msgid ""
-#| "The selected add-on has the following dependency, which is not currently "
-#| "installed. Do you wish to install it before continuing?"
-#| msgid_plural ""
-#| "The selected add-on has the following dependencies, which are not "
-#| "currently installed. Do you wish to install them before continuing?"
 msgid ""
 "The selected add-on has the following dependency, which is outdated or not "
 "currently installed. Do you wish to install it before continuing?"
@@ -6331,30 +6201,26 @@ msgid_plural ""
 "The selected add-on has the following dependencies, which are outdated or "
 "not currently installed. Do you wish to install them before continuing?"
 msgstr[0] ""
-"Выбранный аддон имеет следующую зависимость, которая пока не установлена. "
-"Установить её?"
+"Выбранный аддон имеет следующую зависимость, которая пока не установлена или "
+"устарела. Установить её?"
 msgstr[1] ""
-"Выбранный аддон имеет следующие зависимости, которые пока не установлены. "
-"Установить их?"
+"Выбранный аддон имеет следующие зависимости, которые пока не установлены или "
+"устарели. Установить их?"
 msgstr[2] ""
-"Выбранный аддон имеет следующие зависимости, которые пока не установлены. "
-"Установить их?"
+"Выбранный аддон имеет следующие зависимости, которые пока не установлены или "
+"устарели. Установить их?"
 
 #: src/gui/dialogs/game_load.hpp:40
 msgid "No Saved Games"
 msgstr "Нет сохранённых игр"
 
 #: src/gui/dialogs/game_load.hpp:40
-#, fuzzy
-#| msgid "The file you have tried to load is corrupt"
 msgid "There are no save files to load"
-msgstr "Файл, который Вы пытались загрузить, поврежден"
+msgstr "Нет файлов для загрузки"
 
 #: src/gui/dialogs/game_stats.hpp:43
-#, fuzzy
-#| msgid "No multiplayer sides found"
 msgid "No visible sides found."
-msgstr "Нет сетевых игроков"
+msgstr "Не обнаружены видимые стороны"
 
 #: src/gui/dialogs/multiplayer/player_info.cpp:104
 msgid "In game:"
@@ -6393,10 +6259,8 @@ msgid "Error"
 msgstr "Ошибка"
 
 #: src/gui/dialogs/unit_list.hpp:45
-#, fuzzy
-#| msgid "No eras found."
 msgid "No units found."
-msgstr "Эры не найдены."
+msgstr "Бойцы не найдены."
 
 #: src/gui/widgets/status_label_helper.hpp:34
 msgid "no"
@@ -6408,49 +6272,41 @@ msgstr "да"
 
 #: src/help/help_browser.cpp:160
 msgid "Reference to unknown topic: "
-msgstr ""
+msgstr "Ссылка на неизвестную тему:"
 
 #: src/help/help_impl.cpp:374
 msgid "Only available during a scenario."
-msgstr ""
+msgstr "Доступно только в сценариях"
 
 #: src/help/help_impl.cpp:399
 msgid "Schedule"
-msgstr ""
+msgstr "Расписание"
 
 #: src/help/help_impl.cpp:491
 msgid "<header>text='Units with this special attack'</header>"
-msgstr ""
+msgstr "<header>text='Бойцы с этой особой атакой'</header>"
 
 #: src/help/help_impl.cpp:555
 msgid "<header>text='Units with this ability'</header>"
-msgstr ""
+msgstr "<header>text='Бойцы с этой особой способностью'</header>"
 
 #: src/help/help_impl.cpp:585
 msgid "Era:"
 msgstr "Эра:"
 
 #: src/help/help_impl.cpp:593
-#, fuzzy
-#| msgid "Actions"
 msgid "Factions"
-msgstr "Действия"
+msgstr "Фракции"
 
 #: src/help/help_impl.cpp:642
-#, fuzzy
-#| msgid "Race: "
 msgid "Races: "
-msgstr "Раса: "
+msgstr "Расы: "
 
 #: src/help/help_impl.cpp:651 src/help/help_impl.cpp:1001
-#, fuzzy
-#| msgid "Alignment: "
 msgid "Alignments: "
-msgstr "Тип: "
+msgstr "Убеждения: "
 
 #: src/help/help_impl.cpp:658
-#, fuzzy
-#| msgid "Leader"
 msgid "Leaders"
 msgstr "Лидер"
 
@@ -6463,98 +6319,76 @@ msgid "No description available."
 msgstr "Описание недоступно."
 
 #: src/help/help_impl.cpp:732 src/help/help_impl.cpp:734
-#, fuzzy
-#| msgid "Ability: "
 msgid "Availability: "
-msgstr "Способность: "
+msgstr "Доступность:"
 
 #: src/help/help_impl.cpp:732
 msgid "Must-have"
-msgstr ""
+msgstr "Обязательно"
 
 #: src/help/help_impl.cpp:734
-#, fuzzy
-#| msgid "not available."
 msgid "Unavailable"
 msgstr "недоступно."
 
 #: src/help/help_impl.cpp:814 src/help/help_impl.cpp:989
 #: src/help/help_topic_generators.cpp:400
 msgid "race^Miscellaneous"
-msgstr ""
+msgstr "Разное"
 
 #: src/help/help_impl.cpp:1001 src/help/help_topic_generators.cpp:517
 #: src/reports.cpp:351
 msgid "Alignment: "
-msgstr "Тип: "
+msgstr "Убеждение:"
 
 #: src/help/help_impl.cpp:1008
 msgid "<header>text='Units of this race'</header>"
-msgstr ""
+msgstr "<header>text='Бойцы этой расы'</header>"
 
 #: src/help/help_impl.cpp:1351
 msgid "corrupted original file"
-msgstr ""
+msgstr "файл повереждён"
 
 #: src/help/help_topic_generators.cpp:62
 msgid "Best of"
-msgstr ""
+msgstr "Лучшие из"
 
 #: src/help/help_topic_generators.cpp:62
 msgid "Worst of"
-msgstr ""
+msgstr "Худшие из"
 
 #: src/help/help_topic_generators.cpp:158
-#, fuzzy
-#| msgid "Terrain: "
 msgid "Base Terrain: "
 msgstr "Местность: "
 
 #: src/help/help_topic_generators.cpp:177
-#, fuzzy
-#| msgid "Movement Costs:"
 msgid "Movement properties: "
 msgstr "Цена ходов:"
 
 #: src/help/help_topic_generators.cpp:181
-#, fuzzy
-#| msgid "Defense: "
 msgid "Defense properties: "
 msgstr "Защита: "
 
 #: src/help/help_topic_generators.cpp:261
-#, fuzzy
-#| msgid "Level: "
 msgid "Level"
 msgstr "Уровень: "
 
 #: src/help/help_topic_generators.cpp:322
-#, fuzzy
-#| msgid "Advances to:"
 msgid "Advances from: "
-msgstr "Продвигается в:"
+msgstr "Продвигается из:"
 
 #: src/help/help_topic_generators.cpp:324
-#, fuzzy
-#| msgid "Advances to:"
 msgid "Advances to: "
 msgstr "Продвигается в:"
 
 #: src/help/help_topic_generators.cpp:353
-#, fuzzy
-#| msgid "Base attacks: "
 msgid "Base unit: "
-msgstr "Базовые атаки: "
+msgstr "Базовый боец: "
 
 #: src/help/help_topic_generators.cpp:358
-#, fuzzy
-#| msgid "Lawful units: "
 msgid "Base units: "
-msgstr "Порядочные бойцы: "
+msgstr "Базовые бойцы: "
 
 #: src/help/help_topic_generators.cpp:376
-#, fuzzy
-#| msgid "Modifications:"
 msgid "Variations: "
 msgstr "Модификации:"
 
@@ -6568,16 +6402,12 @@ msgid "Traits"
 msgstr "Особенности"
 
 #: src/help/help_topic_generators.cpp:472
-#, fuzzy
-#| msgid "Ability: "
 msgid "Abilities: "
-msgstr "Способность: "
+msgstr "Способности: "
 
 #: src/help/help_topic_generators.cpp:490
-#, fuzzy
-#| msgid "Ability: "
 msgid "Ability Upgrades: "
-msgstr "Способность: "
+msgstr "Улучшение способностей:"
 
 #: src/help/help_topic_generators.cpp:508
 msgid "HP: "
@@ -6588,123 +6418,92 @@ msgid "Moves: "
 msgstr "Ходов: "
 
 #: src/help/help_topic_generators.cpp:511
-#, fuzzy
-#| msgid "vision: "
 msgid "Vision: "
-msgstr "видение: "
+msgstr "Видение: "
 
 #: src/help/help_topic_generators.cpp:514
-#, fuzzy
-#| msgid "Warning: "
 msgid "Jamming: "
-msgstr "Предупреждение: "
+msgstr "Контроль:"
 
 #: src/help/help_topic_generators.cpp:516
 msgid "Cost: "
-msgstr ""
+msgstr "Цена:"
 
 #: src/help/help_topic_generators.cpp:521
 msgid "Required XP: "
-msgstr ""
+msgstr "Требуется опыта:"
 
 #: src/help/help_topic_generators.cpp:530
 msgid "unit help^Attacks"
-msgstr ""
+msgstr "Атаки"
 
 #: src/help/help_topic_generators.cpp:537
 msgid "unit help^Name"
-msgstr ""
+msgstr "Имя"
 
 #: src/help/help_topic_generators.cpp:538
 msgid "Type"
 msgstr "Тип"
 
 #: src/help/help_topic_generators.cpp:539
-#, fuzzy
-#| msgid "strike"
-#| msgid_plural "strikes"
 msgid "Strikes"
-msgstr "удар"
+msgstr "Бьет"
 
 #: src/help/help_topic_generators.cpp:540
-#, fuzzy
-#| msgid "Orange"
 msgid "Range"
-msgstr "Оранжевый"
+msgstr "Дальность"
 
 #: src/help/help_topic_generators.cpp:541
-#, fuzzy
-#| msgid "Specials: "
 msgid "Special"
-msgstr "Особенности: "
+msgstr "Особенности:"
 
 #: src/help/help_topic_generators.cpp:603
-#, fuzzy
-#| msgid "Resistances: "
 msgid "Resistances"
 msgstr "Сопротивляемость: "
 
 #: src/help/help_topic_generators.cpp:607
-#, fuzzy
-#| msgid "Attacker"
 msgid "Attack Type"
-msgstr "Атакующий"
+msgstr "Тип атаки"
 
 #: src/help/help_topic_generators.cpp:608
-#, fuzzy
-#| msgid "Resistances: "
 msgid "Resistance"
 msgstr "Сопротивляемость: "
 
 #: src/help/help_topic_generators.cpp:637
-#, fuzzy
-#| msgid "Experience Modifier: "
 msgid "Terrain Modifiers"
 msgstr "Модификатор опыта: "
 
 #: src/help/help_topic_generators.cpp:641
-#, fuzzy
-#| msgid "Terrain: "
 msgid "Terrain"
 msgstr "Местность: "
 
 #: src/help/help_topic_generators.cpp:642
-#, fuzzy
-#| msgid "Defense: "
 msgid "Defense"
 msgstr "Защита: "
 
 #: src/help/help_topic_generators.cpp:643
-#, fuzzy
-#| msgid "Movement Costs:"
 msgid "Movement Cost"
 msgstr "Цена ходов:"
 
 #: src/help/help_topic_generators.cpp:647
-#, fuzzy
-#| msgid "Defense: "
 msgid "Defense Cap"
 msgstr "Защита: "
 
 #: src/help/help_topic_generators.cpp:652
-#, fuzzy
-#| msgid "vision: "
 msgid "Vision Cost"
 msgstr "видение: "
 
 #: src/help/help_topic_generators.cpp:656
 msgid "Jamming Cost"
-msgstr ""
+msgstr "Цена контроля"
 
 #: src/hotkey/command_executor.cpp:391
-#, fuzzy
-#| msgid "Do you really want to quit?"
 msgid "Do you really want to surrender the game?"
-msgstr "Вы действительно хотите выйти?"
+msgstr "Вы действительно хотите сдаться?"
 
 #: src/hotkey/command_executor.cpp:391
 msgid "Surrender"
-msgstr ""
+msgstr "Сдаться"
 
 #: src/hotkey/command_executor.cpp:804
 msgid "Map-Screenshot"
@@ -6748,31 +6547,27 @@ msgstr "Язык по умолчанию"
 
 #: src/map/location.cpp:164
 msgid "North"
-msgstr ""
+msgstr "Север"
 
 #: src/map/location.cpp:166
 msgid "North East"
-msgstr ""
+msgstr "Северо-восток"
 
 #: src/map/location.cpp:168
 msgid "North West"
-msgstr ""
+msgstr "Северо-запад"
 
 #: src/map/location.cpp:170
 msgid "South"
-msgstr ""
+msgstr "Юг"
 
 #: src/map/location.cpp:172
-#, fuzzy
-#| msgid "Rusty Gate South East"
 msgid "South East"
-msgstr "Ржавые ворота юго-восток"
+msgstr "Юго-восток"
 
 #: src/map/location.cpp:174
-#, fuzzy
-#| msgid "Rusty Gate South West"
 msgid "South West"
-msgstr "Ржавые ворота юго-запад"
+msgstr "Юго-запад"
 
 #: src/map_command_handler.hpp:187
 msgid "This command is currently unavailable."
@@ -6836,8 +6631,6 @@ msgid "aliases:"
 msgstr "алиасы:"
 
 #: src/menu_events.cpp:176
-#, fuzzy
-#| msgid "Save the Map As"
 msgid "Save Map As"
 msgstr "Сохранить карту как"
 
@@ -6887,15 +6680,12 @@ msgstr "Вы сейчас не можете призывать на этом п�
 
 #: src/menu_events.cpp:384
 msgid "No unit recalled"
-msgstr ""
+msgstr "Бойцы не завербованы"
 
 #: src/menu_events.cpp:401
-#, fuzzy
-#| msgid "You must have at least 1 gold piece to recall a unit"
-#| msgid_plural "You must have at least $cost gold pieces to recall a unit"
 msgid "You must have at least 1 gold piece to recall a unit"
 msgid_plural "You must have at least $cost gold pieces to recall this unit"
-msgstr[0] "У Вас должна быть хотя бы $cost золотая монета для призыва бойца"
+msgstr[0] "У Вас должна быть хотя бы 1 золотая монета для призыва бойца"
 msgstr[1] "У Вас должны быть хотя бы $cost золотые монеты для призыва бойца"
 msgstr[2] "У Вас должно быть хотя бы $cost золотых монет для призыва бойца"
 
@@ -6929,18 +6719,12 @@ msgid "Name:"
 msgstr "Имя:"
 
 #: src/menu_events.cpp:804
-#, fuzzy
-#| msgid "Clear all orders"
 msgid "Clear Labels"
-msgstr "Отменить все приказы"
+msgstr "Убрать метки"
 
 #: src/menu_events.cpp:805
-#, fuzzy
-#| msgid "Are you sure you want to remove the following installed add-on?"
-#| msgid_plural ""
-#| "Are you sure you want to remove the following installed add-ons?"
 msgid "Are you sure you want to clear map labels?"
-msgstr "Вы уверены, что хотите удалить следующий аддон?"
+msgstr "Вы уверены, что хотите убрать метки на карте?"
 
 #: src/menu_events.cpp:1000
 msgid "Search"
@@ -6961,7 +6745,7 @@ msgstr "(сетевая команда)"
 
 #: src/menu_events.cpp:1149
 msgid "(not during other events)"
-msgstr ""
+msgstr "(не во время других действий/событий)"
 
 #: src/menu_events.cpp:1178
 msgid "Refresh gui."
@@ -7164,10 +6948,8 @@ msgid "Toggle overlaying of terrain codes on hexes."
 msgstr "Переключить отрисовку кодов местности на сетке."
 
 #: src/menu_events.cpp:1252
-#, fuzzy
-#| msgid "Toggle overlaying of terrain codes on hexes."
 msgid "Toggle overlaying of number of bitmaps on hexes."
-msgstr "Переключить отрисовку кодов местности на сетке."
+msgstr "Переключить отрисовку числа битовых карт на сетке."
 
 #: src/menu_events.cpp:1254
 msgid "Toggle planning mode."
@@ -7191,19 +6973,17 @@ msgstr "Нельзя переключить на ИИ сетевую сторо�
 
 #: src/menu_events.cpp:1431
 msgid "Side '$side' is already droided."
-msgstr ""
+msgstr "Сторона '$side' уже переключена на ИИ"
 
 #: src/menu_events.cpp:1441
 msgid "Side '$side' controller is now controlled by: AI."
-msgstr ""
+msgstr "Сторона '$side' теперь под управлением ИИ"
 
 #: src/menu_events.cpp:1443
 msgid "Side '$side' controller is now controlled by: human."
-msgstr ""
+msgstr "Сторона '$side' теперь под управлением другого игрока"
 
 #: src/menu_events.cpp:1451
-#, fuzzy
-#| msgid "Can't droid invalid side: '$side'."
 msgid "Can't droid a local ai side: '$side'."
 msgstr "Нельзя переключить на ИИ неверную сторону: '$side'."
 
@@ -7212,14 +6992,10 @@ msgid "Can't idle invalid side: '$side'."
 msgstr "Нельзя заморозить неверную сторону: '$side'."
 
 #: src/menu_events.cpp:1472
-#, fuzzy
-#| msgid "Can't droid networked side: '$side'."
 msgid "Can't idle networked side: '$side'."
 msgstr "Нельзя переключить на ИИ сетевую сторону: '$side'."
 
 #: src/menu_events.cpp:1477
-#, fuzzy
-#| msgid "Can't idle invalid side: '$side'."
 msgid "Can't idle local ai side: '$side'."
 msgstr "Нельзя заморозить неверную сторону: '$side'."
 
@@ -7257,7 +7033,7 @@ msgstr "Режим отладки отключён!"
 
 #: src/menu_events.cpp:1755
 msgid "WARNING! Unsafe Lua Mode"
-msgstr ""
+msgstr "Внимание: Небезопасный режим Lua"
 
 #: src/menu_events.cpp:1756
 msgid ""
@@ -7267,6 +7043,9 @@ msgid ""
 "\n"
 "Do not continue unless you really know what you are doing."
 msgstr ""
+"Выполнение кода Lua в данном режиме делает ваш компьютер уязвимым.\n"
+"\n"
+"Не включайте этот режим если не уверены."
 
 #: src/menu_events.cpp:1761
 msgid "Unsafe mode enabled!"
@@ -7309,45 +7088,41 @@ msgstr ""
 "запланированные бойцы для вербовки или призыва."
 
 #: src/mouse_events.cpp:1280
-#, fuzzy
-#| msgid "No usable weapon"
 msgid "This unit has no usable weapons."
-msgstr "Нет подходящего оружия"
+msgstr "У бойца нет подходящего оружия"
 
 #: src/mp_game_settings.hpp:70
 msgid "Independent"
-msgstr ""
+msgstr "Независимо"
 
 #: src/mp_game_settings.hpp:71
 msgid "No Mirror"
-msgstr ""
+msgstr "Нет зеркала"
 
 #: src/mp_game_settings.hpp:72
 msgid "No Ally Mirror"
-msgstr ""
+msgstr "Нет союзного зеркала"
 
 #: src/mp_ui_alerts.cpp:66
 msgid "A player has joined"
-msgstr ""
+msgstr "Игрок присоединился"
 
 #: src/mp_ui_alerts.cpp:66 src/mp_ui_alerts.cpp:80 src/mp_ui_alerts.cpp:149
 #: src/mp_ui_alerts.cpp:160
 msgid "Wesnoth"
-msgstr ""
+msgstr "Вестнот"
 
 #: src/mp_ui_alerts.cpp:80
 msgid "A player has left"
-msgstr ""
+msgstr "Игрок отключился"
 
 #: src/mp_ui_alerts.cpp:149
-#, fuzzy
-#| msgid "Back to Start"
 msgid "Ready to start!"
 msgstr "Вернуться к началу"
 
 #: src/mp_ui_alerts.cpp:160
 msgid "Game has begun!"
-msgstr ""
+msgstr "Игра началась!"
 
 #: src/mp_ui_alerts.cpp:170
 msgid "$name has taken control"
@@ -7409,10 +7184,11 @@ msgid ""
 "to another controller. You may use :droid, :control or :give_control for "
 "example."
 msgstr ""
+"Эта сторона зависла. Чтобы продолжить игру, этой стороной должен кто-то "
+"управлять. Например, можете воспользоваться командами :droid, :control или :"
+"give_control."
 
 #: src/playsingle_controller.cpp:154
-#, fuzzy
-#| msgid "Error"
 msgid "Game Error"
 msgstr "Ошибка"
 
@@ -7422,6 +7198,9 @@ msgid ""
 "what this message means, then most likely someone is cheating or someone "
 "reloaded a corrupt game."
 msgstr ""
+"Эта многопользовательская игра использует альтернативный генератор случайных "
+"чисел. Если вам это сообщение ниочем не говорит, значит кто-то использует "
+"чит или загружает поврежденную игру."
 
 #: src/playsingle_controller.cpp:306
 msgid "The game is over."
@@ -7439,16 +7218,12 @@ msgid "It is now $name|’s turn"
 msgstr "Сейчас ход $name|"
 
 #: src/playturn.cpp:275
-#, fuzzy
-#| msgid "Give gold to the current player."
 msgid "Give control to their ally $player"
-msgstr "Дать золота текущему игроку."
+msgstr "Отдать управление их союзнику $player"
 
 #: src/playturn.cpp:284
-#, fuzzy
-#| msgid "Give gold to the current player."
 msgid "Give control to observer $player"
-msgstr "Дать золота текущему игроку."
+msgstr "Отдать управление наблюдателю $player"
 
 #: src/playturn.cpp:289
 msgid "Replace with AI"
@@ -7467,12 +7242,12 @@ msgid "Save and abort game"
 msgstr "Сохранить и завершить игру"
 
 #: src/playturn.cpp:296
-#, fuzzy
-#| msgid "$player has left the game. What do you want to do?"
 msgid ""
 "$player who controlled side $side_drop has left the game. What do you want "
 "to do?"
-msgstr "$player вышел из игры. Что Вы будете делать?"
+msgstr ""
+"$player который управлял стороной $side_drop вышел из игры. Что Вы будете "
+"делать?"
 
 #: src/quit_confirmation.cpp:59
 msgid "Quit"
@@ -7674,24 +7449,22 @@ msgstr "Особенность оружия: "
 
 #: src/reports.cpp:902
 msgid "weapon^None"
-msgstr ""
+msgstr "Нет"
 
 #: src/reports.cpp:931
 msgid "Total damage"
 msgstr "Всего повреждений"
 
 #: src/reports.cpp:993
-#, fuzzy
-#| msgid "Attacker"
 msgid "Attack"
 msgid_plural "Attacks"
-msgstr[0] "Атакующий"
-msgstr[1] "Атакующий"
-msgstr[2] "Атакующий"
+msgstr[0] "Атака"
+msgstr[1] "Атаки"
+msgstr[2] "Атаки"
 
 #: src/reports.cpp:1129 src/reports.cpp:1181
 msgid "Lawful units: "
-msgstr "Порядочные бойцы: "
+msgstr "Воины Света: "
 
 #: src/reports.cpp:1131 src/reports.cpp:1183
 msgid "Neutral units: "
@@ -7699,23 +7472,21 @@ msgstr "Нейтральные бойцы: "
 
 #: src/reports.cpp:1132 src/reports.cpp:1184
 msgid "Chaotic units: "
-msgstr "Хаотичные бойцы: "
+msgstr "Слуги Тьмы: "
 
 #: src/reports.cpp:1134 src/reports.cpp:1186
 msgid "Liminal units: "
 msgstr "Теневые бойцы: "
 
 #: src/reports.cpp:1245
-#, fuzzy
-#| msgid "Turn "
 msgid "Turn Number"
-msgstr "Ход "
+msgstr "Номер хода"
 
 #: src/reports.cpp:1247
 msgid ""
 "When the game reaches the number of turns indicated by the second number, it "
 "will end."
-msgstr ""
+msgstr "Когда количество ходов достигнет второго значения, игра будет окончена"
 
 #: src/reports.cpp:1272
 msgid "Gold"
@@ -7724,11 +7495,11 @@ msgstr "Золото"
 #: src/reports.cpp:1272
 msgid ""
 "The amount of gold currently available to recruit and maintain your army."
-msgstr ""
+msgstr "Доступное золото для вербовки и содержания войск"
 
 #: src/reports.cpp:1291
 msgid "The fraction of known villages that your side has captured."
-msgstr ""
+msgstr "Деревни под вашим контролем"
 
 #: src/reports.cpp:1291
 msgid "Villages"
@@ -7736,13 +7507,11 @@ msgstr "Деревни"
 
 #: src/reports.cpp:1296
 msgid "The total number of units on your side."
-msgstr ""
+msgstr "Количество ваших бойцов"
 
 #: src/reports.cpp:1296
-#, fuzzy
-#| msgid "units"
 msgid "Units"
-msgstr "бойцы"
+msgstr "Бойцы"
 
 #: src/reports.cpp:1306
 msgid ""
@@ -7751,6 +7520,9 @@ msgid ""
 "total cost of upkeep, including that covered by villages — in other words, "
 "the amount of gold that would be deducted if you lost all villages."
 msgstr ""
+"Стоимость содержания армии за ход. Первое число - потраченное золото на "
+"армию. Второе - золото от деревень. То есть, количество золота, которое "
+"придется тратить, в случае потери всех деревень."
 
 #: src/reports.cpp:1306
 msgid "Upkeep"
@@ -7764,7 +7536,7 @@ msgstr "Доход"
 msgid ""
 "The amount of gold you gain each turn from your controlled villages, or the "
 "amount of gold you will lose each turn for unit upkeep."
-msgstr ""
+msgstr "Золото от подконтрольных деревень, или от содержания бойцов"
 
 #: src/reports.cpp:1511
 msgid "Observers:"
@@ -7772,19 +7544,19 @@ msgstr "Наблюдатели: "
 
 #: src/reports.cpp:1553
 msgid "Clock"
-msgstr ""
+msgstr "Часы"
 
 #: src/reports.cpp:1565
 msgid "Battery"
-msgstr ""
+msgstr "Заряд"
 
 #: src/reports.cpp:1594
 msgid "Countdown until your turn automatically ends."
-msgstr ""
+msgstr "Счетчик времени, когда ход будет завершен автоматически"
 
 #: src/reports.cpp:1594
 msgid "Turn Countdown"
-msgstr ""
+msgstr "Обратный отсчет хода"
 
 #: src/save_index.cpp:218
 msgid "%a %b %d %I:%M %p %Y"
@@ -7829,7 +7601,7 @@ msgstr "Загрузить игру"
 
 #: src/savegame.cpp:297
 msgid "Replays are not supported in multiplayer mode."
-msgstr ""
+msgstr "Риплеи не поддерживаются в многопользовательском режиме."
 
 #: src/savegame.cpp:304
 msgid "This is not a multiplayer save."
@@ -7884,12 +7656,12 @@ msgstr "Сохранить игру"
 
 #: src/savegame.cpp:638
 msgid "Game state is corrupted"
-msgstr ""
+msgstr "Игра повреждена"
 
 #: src/scripting/game_lua_kernel.cpp:2786
 #: src/scripting/game_lua_kernel.cpp:2821
 msgid "input"
-msgstr ""
+msgstr "ввод"
 
 #: src/serialization/parser.cpp:153
 msgid "Unexpected characters at line start"
@@ -8032,47 +7804,43 @@ msgid "infix_binary^i"
 msgstr "и"
 
 #: src/synced_commands.cpp:410
-#, fuzzy
-#| msgid "Unknown era"
 msgid "(unknown player)"
-msgstr "Неизвестная эра"
+msgstr "(неизвестный игрок)"
 
 #: src/synced_commands.cpp:415
 msgid "The :$command debug command was used during $player’s turn"
-msgstr ""
+msgstr "Команда :$command была использована во время хода $player"
 
 #: src/synced_commands.cpp:423
 msgid ""
 "A player used a debug command during the game. If this is unexpected, it is "
 "possible the player in question is cheating."
 msgstr ""
+"Игрок задействовал команду консоли. Если этого не требовалось делать, "
+"вероятно он читер."
 
 #: src/synced_commands.cpp:425
-#, fuzzy
-#| msgid "Details"
 msgid "Details:"
-msgstr "Детали"
+msgstr "Подробности:"
 
 #: src/synced_commands.cpp:428
 msgid "Do you wish to save the game before continuing?"
-msgstr ""
+msgstr "Сохранить игру?"
 
 #: src/synced_commands.cpp:430
-#, fuzzy
-#| msgid "(debug command)"
 msgid "Debug Command Used"
-msgstr "(отладочная команда)"
+msgstr "Отладочная команда"
 
 #: src/synced_commands.cpp:516
 msgid "A unit was created using debug mode during $player’s turn"
-msgstr ""
+msgstr "Боец был создан во время хода $player"
 
 #: src/synced_user_choice.cpp:327
 msgid "waiting for $desc from side $sides"
 msgid_plural "waiting for $desc from sides $sides"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Ждем $desc от стороны $sides"
+msgstr[1] "Ждем $desc от сторон $sides"
+msgstr[2] "Ждем $desc от сторон $sides"
 
 #: src/terrain/terrain.cpp:181
 msgid "Allied village"
@@ -8100,43 +7868,33 @@ msgstr "Время суток-заглушка"
 
 #: src/time_of_day.cpp:46
 msgid "This Time of Day is only a Stub!"
-msgstr ""
+msgstr "Это время суток просто заглушка!"
 
 #. TRANSLATORS: Current value for WML code increase_damage, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:356
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> damage"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> damage"
-msgstr[0] "за ход"
-msgstr[1] "за ход"
-msgstr[2] "за ход"
+msgstr[0] "<span color=\"$color\">$number_or_percent</span> урона"
+msgstr[1] "<span color=\"$color\">$number_or_percent%</span> урона"
+msgstr[2] "<span color=\"$color\">$number_or_percent%</span> урона"
 
 #: src/units/attack_type.cpp:365
-#, fuzzy
-#| msgid "damage"
-#| msgid_plural "damage"
 msgid "$number damage"
 msgid_plural "$number damage"
-msgstr[0] "ущерб"
-msgstr[1] "ущерба"
-msgstr[2] "ущерба"
+msgstr[0] "единиц урона"
+msgstr[1] "единиц урона"
+msgstr[2] "единиц урона"
 
 #. TRANSLATORS: Current value for WML code increase_attacks, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:374
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> strike"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> strikes"
-msgstr[0] "за ход"
-msgstr[1] "за ход"
-msgstr[2] "за ход"
+msgstr[0] "<span color=\"$color\">$number_or_percent</span> удар"
+msgstr[1] "<span color=\"$color\">$number_or_percent</span> удара"
+msgstr[2] "<span color=\"$color\">$number_or_percent</span> ударов"
 
 #. TRANSLATORS: Current value for WML code set_attacks, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:383
-#, fuzzy
-#| msgid "strike"
-#| msgid_plural "strikes"
 msgid "$number strike"
 msgid_plural "$number strikes"
 msgstr[0] "удар"
@@ -8145,61 +7903,47 @@ msgstr[2] "ударов"
 
 #. TRANSLATORS: Current value for WML code set_accuracy, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:392
-#, fuzzy
-#| msgid "% parry"
 msgid "$number| accuracy"
-msgstr "% защиты"
+msgstr "$number| меткость"
 
 #. TRANSLATORS: Current value for WML code increase_accuracy, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:399
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent|%</span> accuracy"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent|%</span> меткость"
 
 #. TRANSLATORS: Current value for WML code set_parry, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:406
-#, fuzzy
-#| msgid "% parry"
 msgid "$number parry"
-msgstr "% защиты"
+msgstr "$number% уклонения"
 
 #. TRANSLATORS: Current value for WML code increase_parry, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:413
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> parry"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span>% уклонения"
 
 #. TRANSLATORS: Current value for WML code set_movement_used, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:420
-#, fuzzy
-#| msgid "Movement Costs:"
 msgid "$number movement point"
 msgid_plural "$number movement points"
-msgstr[0] "Цена ходов:"
-msgstr[1] "Цена ходов:"
-msgstr[2] "Цена ходов:"
+msgstr[0] "Очко движения:"
+msgstr[1] "Очка движения:"
+msgstr[2] "Очков движения:"
 
 #. TRANSLATORS: Current value for WML code increase_movement_used, documented in https://wiki.wesnoth.org/EffectWML
 #: src/units/attack_type.cpp:429
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> movement point"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> movement points"
-msgstr[0] "за ход"
-msgstr[1] "за ход"
-msgstr[2] "за ход"
+msgstr[0] "<span color=\"$color\">$number_or_percent</span>% очков движения"
+msgstr[1] "<span color=\"$color\">$number_or_percent</span>% очков движения"
+msgstr[2] "<span color=\"$color\">$number_or_percent</span>% очков движения"
 
 #: src/units/types.cpp:545 src/units/types.hpp:181
 msgid "chaotic"
-msgstr "хаотичный"
+msgstr "тёмный"
 
 #: src/units/types.cpp:545 src/units/types.hpp:179
-#, fuzzy
-#| msgid "female^lawful"
 msgid "lawful"
-msgstr "порядочная"
+msgstr "светлый"
 
 #: src/units/types.cpp:545 src/units/types.hpp:182
 msgid "liminal"
@@ -8211,11 +7955,11 @@ msgstr "нейтральный"
 
 #: src/units/types.cpp:546 src/units/types.cpp:912
 msgid "female^chaotic"
-msgstr "хаотичная"
+msgstr "тёмная"
 
 #: src/units/types.cpp:546 src/units/types.cpp:910
 msgid "female^lawful"
-msgstr "порядочная"
+msgstr "светлая"
 
 #: src/units/types.cpp:546 src/units/types.cpp:911
 msgid "female^neutral"
@@ -8230,53 +7974,39 @@ msgid "$attack_list|: $effect_description"
 msgstr "$attack_list|: $effect_description"
 
 #: src/units/unit.cpp:1781
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> HP"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span> ОЗ"
 
 #: src/units/unit.cpp:1791
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> move"
 msgid_plural "<span color=\"$color\">$number_or_percent</span> moves"
-msgstr[0] "за ход"
-msgstr[1] "за ход"
-msgstr[2] "за ход"
+msgstr[0] "<span color=\"$color\">$number_or_percent</span> ОД"
+msgstr[1] "<span color=\"$color\">$number_or_percent</span> ОД"
+msgstr[2] "<span color=\"$color\">$number_or_percent</span> ОД"
 
 #: src/units/unit.cpp:1797
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> vision"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span> Зрения"
 
 #: src/units/unit.cpp:1801
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> jamming"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span> контроля"
 
 #: src/units/unit.cpp:1806
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> XP to advance"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span> опыта до уровня"
 
 #: src/units/unit.cpp:1810
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> attack per turn"
 msgid_plural ""
 "<span color=\"$color\">$number_or_percent</span> attacks per turn"
-msgstr[0] "за ход"
-msgstr[1] "за ход"
-msgstr[2] "за ход"
+msgstr[0] "<span color=\"$color\">$number_or_percent</span> атак в ход"
+msgstr[1] "<span color=\"$color\">$number_or_percent</span> атак в ход"
+msgstr[2] "<span color=\"$color\">$number_or_percent</span> атак в ход"
 
 #: src/units/unit.cpp:1817
-#, fuzzy
-#| msgid "per turn"
 msgid "<span color=\"$color\">$number_or_percent</span> cost to recall"
-msgstr "за ход"
+msgstr "<span color=\"$color\">$number_or_percent</span> цена вербовки"
 
 #: src/units/unit.cpp:2222
 msgid "$effect_description per level"
@@ -8285,28 +8015,26 @@ msgstr "$effect_description за уровень"
 #. TRANSLATORS: "Before Wesnoth"   - format for years prior to the founding of Wesnoth
 #: src/utils/irdya_datetime.cpp:59
 msgid "$year BW"
-msgstr ""
+msgstr "$year до ЭВ"
 
 #. TRANSLATORS: "Year of Wesnoth"  - format for years after the founding of Wesnoth
 #: src/utils/irdya_datetime.cpp:62
 msgid "$year YW"
-msgstr ""
+msgstr "$year ЭВ"
 
 #. TRANSLATORS: "Before the Fall" -  format for years prior to the fall of Wesnoth
 #: src/utils/irdya_datetime.cpp:65
 msgid "$year BF"
-msgstr ""
+msgstr "$year до ПВ"
 
 #. TRANSLATORS: "After the Fall"   - format for years after the fall of Wesnoth
 #: src/utils/irdya_datetime.cpp:68
 msgid "$year AF"
-msgstr ""
+msgstr "$year ПВ"
 
 #: src/wesnothd_connection.cpp:402
-#, fuzzy
-#| msgid "Connecting to Server..."
 msgid "Disconnected from server."
-msgstr "Подключение к серверу..."
+msgstr "Отключен от сервера"
 
 #: src/whiteboard/manager.cpp:1117
 msgid "SHOW ALL allies’ plans"
